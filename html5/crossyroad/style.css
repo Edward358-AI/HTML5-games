@@ -1,0 +1,22 @@
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+    overflow: hidden;
+    background: #5dc7e7 url(sprites/tiled-bg.png);
+}
+body { 
+    position: relative;
+}
+.pixelated {
+	image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+#container {
+    box-shadow: #31b8e0 0px 0px 50px;
+}
