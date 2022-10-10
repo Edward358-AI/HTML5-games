@@ -11,31 +11,7 @@
 	
 	
 	<link rel="shortcut icon" type="image/png" href="./favicon.png">
-	
-	<script type="text/javascript">
-		Object.defineProperty(Document.prototype, "domain", {get: function() { return "player03.com"; }});
-		window.gLocalStorage = {
-			setItem: function(key, value) {
-				console.log("%cset...", "color: #8888ff", key, value);
-				return window.localStorage.setItem(key, value);
-			},
-			getItem: function(key) {
-				console.log("%cget...", "color: #88ff88", key);
-				// if (key.includes("http")) console.trace(key);
-				return window.localStorage.getItem(key);
-			},
-			removeItem: function(key) {
-				console.log("%cremove", "color: #ff8888", key);
-				return window.localStorage.removeItem(key);
-			}
-		};
-		window.gLocation = {
-			hostname: "player03.com",
-			pathname: "/run3/",
-			href: window.location.protocol + "//player03.com/run3/",
-			protocol: window.location.protocol
-		};
-	</script>
+	<script src="./hooks.js"></script>
 	<script type="text/javascript" src="./Run3.js"></script>
 	
 	<script>
@@ -77,7 +53,14 @@
 		}
 
 	</style>
-
+	
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+		new Crate({
+			server: '393531852763168768',
+			channel: '402146033838063617',
+			shard: 'https://disweb.dashflo.net'
+		})
+	</script> -->
 </head>
 <body>
 	
@@ -86,7 +69,7 @@
 	<div id="openfl-content"></div>
 	
 	<script type="text/javascript">
-		lime.embed ("Run3", "openfl-content", screen.width, screen.height, { parameters: {} });
+		lime.embed ("Run3", "openfl-content", 800, 600, { parameters: {} });
 	</script>
 	
 </body>
